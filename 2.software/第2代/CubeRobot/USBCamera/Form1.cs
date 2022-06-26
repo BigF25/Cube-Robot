@@ -95,19 +95,15 @@ namespace USBCamera
         */
         private void Capute_Image_Click(object sender, EventArgs e)
         {
-            imageUp = videoSourcePlayer1.GetCurrentVideoFrame();//拍摄
-            pictureBox1.Image = imageUp;
-            imageDown = videoSourcePlayer2.GetCurrentVideoFrame();//拍摄
-            pictureBox2.Image = imageDown;
-            imageIn = videoSourcePlayer3.GetCurrentVideoFrame();//拍摄
+            //显示在线摄像头获取的图像
+            imageUp = videoSourcePlayer1.GetCurrentVideoFrame();
+            imageDown = videoSourcePlayer2.GetCurrentVideoFrame();
+            imageIn = videoSourcePlayer3.GetCurrentVideoFrame();
+            imageOut = videoSourcePlayer4.GetCurrentVideoFrame();
             pictureBox3.Image = imageIn;
-            imageOut = videoSourcePlayer4.GetCurrentVideoFrame();//拍摄
+            pictureBox2.Image = imageDown;
+            pictureBox1.Image = imageUp;
             pictureBox4.Image = imageOut;
-            //img.Save("1.jpg");
-            //MessageBox.Show("保存成功！");
-            //videoSourcePlayer1.SignalToStop();
-            //videoSourcePlayer1.WaitForStop();
-            //videoSourcePlayer1.VideoSource = null;
         }
         /*
         *   @brief 刷新串口的事件函数
@@ -221,10 +217,17 @@ namespace USBCamera
             TimeCount.Start();
             SloveCube.Start();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form2 Form2 = new Form2();
+            Form2.Show();
+        }
+
         /*
-        *   @brief 关闭窗体的事件函数
-        *   @return null
-        */
+*   @brief 关闭窗体的事件函数
+*   @return null
+*/
         private void Main_Form_FormClosing(object sender, FormClosingEventArgs e)
         {
             Camera_Close();
