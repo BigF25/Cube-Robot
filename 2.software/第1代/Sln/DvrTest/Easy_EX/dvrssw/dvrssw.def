@@ -1,0 +1,16 @@
+; dvrssw.def : 声明 DLL 的模块参数。
+
+LIBRARY
+
+EXPORTS
+    ; 此处可以是显式导出
+	InitDVRS @1
+	ExitDVRS @2
+	OpenVideoPreview @3
+	SaveCaptureImage @4
+	SaveOneCaptureVideo @5
+	GetSysTotalChannels @6
+	StopOneCaptureVideo @7
+	SetChangeVideoSize @8
+	SetVideoCHName @9
+	SetColorParameter @10

@@ -1,0 +1,6 @@
+﻿  main.cpp
+  structs.cpp
+  正在生成代码...
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/PROFILE”规范)
+main.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:REF”规范)
+  Theory2Mechancial.vcxproj -> F:\机器人\项目\魔方2020智能机器人创意大赛大二下\魔方机器人\资料\9.程序汇总\9.程序汇总\Sln\Theory2Mechancial\Debug\Theory2Mechancial.exe

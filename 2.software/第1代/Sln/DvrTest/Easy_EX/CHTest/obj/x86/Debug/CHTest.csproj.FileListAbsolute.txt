@@ -1,0 +1,7 @@
+D:\SettledFiles\DesktopShortcut\毕设\SolveCubeRobot\Sln\DvrTest\bin\CHTest.exe
+D:\SettledFiles\DesktopShortcut\毕设\SolveCubeRobot\Sln\DvrTest\bin\CHTest.pdb
+D:\SettledFiles\DesktopShortcut\毕设\SolveCubeRobot\Sln\DvrTest\Easy_EX\CHTest\obj\x86\Debug\CHTest.Form1.resources
+D:\SettledFiles\DesktopShortcut\毕设\SolveCubeRobot\Sln\DvrTest\Easy_EX\CHTest\obj\x86\Debug\CHTest.Properties.Resources.resources
+D:\SettledFiles\DesktopShortcut\毕设\SolveCubeRobot\Sln\DvrTest\Easy_EX\CHTest\obj\x86\Debug\CHTest.csproj.GenerateResource.Cache
+D:\SettledFiles\DesktopShortcut\毕设\SolveCubeRobot\Sln\DvrTest\Easy_EX\CHTest\obj\x86\Debug\CHTest.exe
+D:\SettledFiles\DesktopShortcut\毕设\SolveCubeRobot\Sln\DvrTest\Easy_EX\CHTest\obj\x86\Debug\CHTest.pdb

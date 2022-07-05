@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DEFECTS><DEFECT><SFA><FILEPATH>d:\settledfiles\desktopshortcut\bishe\solvecuberobot\vscubebyc\sln\theory2mechancial\theory2mechancial\</FILEPATH><FILENAME>structs.cpp</FILENAME><LINE>156</LINE><COLUMN>5</COLUMN></SFA><DEFECTCODE>6262</DEFECTCODE><DESCRIPTION>函数使用了堆栈的“183652”个字节: 超过了 /analyze:stacksize '16384'。 请考虑将某些数据移到堆中。</DESCRIPTION><FUNCTION>LibInit</FUNCTION><DECORATED>?LibInit@@YAXXZ</DECORATED><FUNCLINE>156</FUNCLINE><PATH/></DEFECT></DEFECTS>
