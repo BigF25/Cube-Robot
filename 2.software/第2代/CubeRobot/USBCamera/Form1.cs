@@ -348,9 +348,9 @@ namespace USBCamera
                     imageDown = videoSourcePlayer2.GetCurrentVideoFrame();//拍摄
                     imageIn = videoSourcePlayer3.GetCurrentVideoFrame();//拍摄
                     imageOut = videoSourcePlayer4.GetCurrentVideoFrame();//拍摄
-                    imageUp.Save(Application.StartupPath + "\\image\\00.jpg");
-                    imageDown.Save(Application.StartupPath + "\\image\\01.jpg");
-                    imageIn.Save(Application.StartupPath + "\\image\\02.jpg");
+                    imageUp.Save(Application.StartupPath + "\\image\\02.jpg");
+                    imageDown.Save(Application.StartupPath + "\\image\\00.jpg");
+                    imageIn.Save(Application.StartupPath + "\\image\\01.jpg");
                     imageOut.Save(Application.StartupPath + "\\image\\03.jpg");
                     System.Threading.Thread.Sleep(100);
                 }
@@ -358,9 +358,9 @@ namespace USBCamera
                 imageDown = videoSourcePlayer2.GetCurrentVideoFrame();//拍摄
                 imageIn = videoSourcePlayer3.GetCurrentVideoFrame();//拍摄
                 imageOut = videoSourcePlayer4.GetCurrentVideoFrame();//拍摄
-                imageUp.Save(Application.StartupPath + "\\image\\10.jpg");
-                imageDown.Save(Application.StartupPath + "\\image\\11.jpg");
-                imageIn.Save(Application.StartupPath + "\\image\\12.jpg");
+                imageUp.Save(Application.StartupPath + "\\image\\12.jpg");
+                imageDown.Save(Application.StartupPath + "\\image\\10.jpg");
+                imageIn.Save(Application.StartupPath + "\\image\\11.jpg");
                 imageOut.Save(Application.StartupPath + "\\image\\13.jpg");
             }
             else//（调试用）

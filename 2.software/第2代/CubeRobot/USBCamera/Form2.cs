@@ -26,10 +26,10 @@ namespace USBCamera
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            FileStream fileStream1 = new FileStream("image/ChoseROI/00.bmp", FileMode.Open, FileAccess.Read);
-            FileStream fileStream2 = new FileStream("image/ChoseROI/01.bmp", FileMode.Open, FileAccess.Read);
-            FileStream fileStream3 = new FileStream("image/ChoseROI/02.bmp", FileMode.Open, FileAccess.Read);
-            FileStream fileStream4 = new FileStream("image/ChoseROI/03.bmp", FileMode.Open, FileAccess.Read);
+            FileStream fileStream1 = new FileStream("image/ChoseROI/00.jpg", FileMode.Open, FileAccess.Read);
+            FileStream fileStream2 = new FileStream("image/ChoseROI/01.jpg", FileMode.Open, FileAccess.Read);
+            FileStream fileStream3 = new FileStream("image/ChoseROI/02.jpg", FileMode.Open, FileAccess.Read);
+            FileStream fileStream4 = new FileStream("image/ChoseROI/03.jpg", FileMode.Open, FileAccess.Read);
             pictureBox1.Image = Image.FromStream(fileStream1);
             pictureBox2.Image = Image.FromStream(fileStream2);
             pictureBox3.Image = Image.FromStream(fileStream3);
