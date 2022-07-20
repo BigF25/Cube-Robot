@@ -285,7 +285,6 @@ namespace USBCamera
             Byte[] ReceiveByte = new Byte[this.SerialPort1.BytesToRead];
             this.SerialPort1.Read(ReceiveByte, 0, ReceiveByte.Length);
             this.SerialPort1.DiscardInBuffer();
-            //MessageBox.Show(ReceiveByte[0].ToString());
             for (int i = 0; i < ReceiveByte.Length; i++)
             {
                 //若收到数据OXCC，则SecondCapDown为true
@@ -373,7 +372,7 @@ namespace USBCamera
         {
             //扫描
             state = SCAN;
-            Get_Picture(DEBUG);
+            Get_Picture(RUN);
             //解算
             state = CALC;
             string cube = GetCubeDataFormOpenCV();
@@ -399,18 +398,18 @@ namespace USBCamera
         {
             if(debug_flag == RUN)
             {
-                while (!CaptureSecondImg_flag)
-                {
-                    imageUp = videoSourcePlayer1.GetCurrentVideoFrame();//拍摄
-                    imageDown = videoSourcePlayer2.GetCurrentVideoFrame();//拍摄
-                    imageIn = videoSourcePlayer3.GetCurrentVideoFrame();//拍摄
-                    imageOut = videoSourcePlayer4.GetCurrentVideoFrame();//拍摄
-                    imageUp.Save(Application.StartupPath + "\\image\\02.jpg");
-                    imageDown.Save(Application.StartupPath + "\\image\\00.jpg");
-                    imageIn.Save(Application.StartupPath + "\\image\\01.jpg");
-                    imageOut.Save(Application.StartupPath + "\\image\\03.jpg");
+                imageUp = videoSourcePlayer1.GetCurrentVideoFrame();//拍摄
+                imageDown = videoSourcePlayer2.GetCurrentVideoFrame();//拍摄
+                imageIn = videoSourcePlayer3.GetCurrentVideoFrame();//拍摄
+                imageOut = videoSourcePlayer4.GetCurrentVideoFrame();//拍摄
+                imageUp.Save(Application.StartupPath + "\\image\\02.jpg");
+                imageDown.Save(Application.StartupPath + "\\image\\00.jpg");
+                imageIn.Save(Application.StartupPath + "\\image\\01.jpg");
+                imageOut.Save(Application.StartupPath + "\\image\\03.jpg");
+                System.Threading.Thread.Sleep(100);
+                MoveHandForSecondCap();
+                while (CaptureSecondImg_flag == false)
                     System.Threading.Thread.Sleep(100);
-                }
                 imageUp = videoSourcePlayer1.GetCurrentVideoFrame();//拍摄
                 imageDown = videoSourcePlayer2.GetCurrentVideoFrame();//拍摄
                 imageIn = videoSourcePlayer3.GetCurrentVideoFrame();//拍摄
@@ -571,6 +570,34 @@ namespace USBCamera
             System.IO.File.Delete(@"./file/MechanicalFlag.txt");//temp文件删除
             //System.IO.File.Delete(@"./Bridge/Mechanical.txt");
             return MechanicalAnswer;//返回
+        }
+        /*
+        *   @brief  发送第二次拍摄的指令
+        *   @return null
+        */
+        void MoveHandForSecondCap()
+        {
+            if (this.SerialPort1.IsOpen)
+            {
+                try
+                {
+                    Byte[] tempByte = new Byte[150];
+                    for (int i = 0; i < 150; i++)
+                    {
+                        tempByte[i] = 0XFF;
+                    }
+                    tempByte[0] = 0XAA;
+                    tempByte[149] = 0XBB;
+                    this.SerialPort1.Write(tempByte, 0, 150);
+                    //this.SerialPort1.Write(tempByte, 0, 150);
+                    //this.SerialPort1.Write(tempByte, 0, 150);
+                }
+                catch { MessageBox.Show("MoveHandForSecondCap err"); }
+            }
+            else
+            {
+                MessageBox.Show("串口未打开");
+            }
         }
         /*
         *   @brief  发送解法到下位机

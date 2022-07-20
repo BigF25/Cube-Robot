@@ -86,3 +86,13 @@ F:\机器人\项目\智能机器人创意大赛大二下\魔方机器人\3-代�
 F:\机器人\项目\智能机器人创意大赛大二下\魔方机器人\3-代码\9.程序汇总\9.程序汇总\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.csproj.CoreCompileInputs.cache
 F:\机器人\项目\智能机器人创意大赛大二下\魔方机器人\3-代码\9.程序汇总\9.程序汇总\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.exe
 F:\机器人\项目\智能机器人创意大赛大二下\魔方机器人\3-代码\9.程序汇总\9.程序汇总\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.pdb
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\bin\Debug\mainControl.exe.config
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\bin\Debug\mainControl.exe
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\bin\Debug\mainControl.pdb
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.csprojAssemblyReference.cache
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.Form1.resources
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.Properties.Resources.resources
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.csproj.GenerateResource.cache
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.csproj.CoreCompileInputs.cache
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.exe
+H:\机器人\项目\Cube Robot\2.software\第1代\Sln\mainControl - 副本\mainControl\obj\Debug\mainControl.pdb

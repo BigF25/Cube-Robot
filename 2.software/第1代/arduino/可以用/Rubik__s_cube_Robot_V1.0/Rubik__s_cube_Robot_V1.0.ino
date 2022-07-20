@@ -1,3 +1,14 @@
+/*
+ * 需要将\hardware\arduino\avr\cores\arduino\HardwareSerial.h
+ * 文件中做如下修改，因为一个解算指令包含150Byte，需要串口接收缓存区大于150Byte
+ * #if !defined(SERIAL_RX_BUFFER_SIZE)
+ * #if ((RAMEND - RAMSTART) < 1023)
+ * #define SERIAL_RX_BUFFER_SIZE 256//16
+ * #else
+ * #define SERIAL_RX_BUFFER_SIZE 256//64 
+ * #endif
+ * #endif
+*/
 //电磁阀
 #define MOS1_pin 5
 #define MOS2_pin 4
